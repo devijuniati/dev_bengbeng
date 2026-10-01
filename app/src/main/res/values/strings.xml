@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DEV-BengBeng</string>
+    <string name="btn_my_project">My Project ✨</string>
+    <string name="snack_title">Beng-Beng</string>
+    <string name="snack_desc">Beng-Beng adalah wafer renyah bersalut karamel, krispi beras, dan cokelat lezat yang pas untuk mengganjal perut saat bersantai.</string>
+    <string name="snack_nutrition">Informasi Nilai Gizi:\n\n• Energi Total: 110 kcal\n• Lemak Total: 4.5g\n• Protein: 1g\n• Karbohidrat Total: 16g\n• Gula: 10g\n• Garam (Natrium): 35mg</string>
+    <string name="created_by">Created with 💕 by Devi</string>
+</resources>

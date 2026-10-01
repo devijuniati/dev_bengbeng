@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="soft_pink">#FDF0F4</color>
+    <color name="soft_button">#C47B95</color>
+    <color name="soft_text">#4A555C</color>
+    <color name="soft_heading">#2D3748</color>
+    <color name="badge_bg">#F2D0DB</color>
+    <color name="badge_text">#A85170</color>
+</resources>
