@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_light_green">
+
+    <!-- Toolbar Beranda Petani -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarHome"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_green"
+        app:title="SawitMON - Beranda Petani"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Card Informasi Harga TBS -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/soft_pink"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Harga TBS Hari Ini"
+                        android:textColor="@color/badge_text"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 2.850 / kg"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_green"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tombol 1: Input Perawatan Kebun -->
+            <Button
+                android:id="@+id/btnInputPerawatan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Formulir Kegiatan Harian"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp"
+                app:cornerRadius="8dp" />
+
+            <!-- Tombol 2: Riwayat Hasil Panen -->
+            <Button
+                android:id="@+id/btnRiwayatPanen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Riwayat Kegiatan Kebun"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp"
+                app:cornerRadius="8dp" />
+
+            <!-- Tombol Web Edukasi Sawit -->
+            <Button
+                android:id="@+id/btnWebEdukasi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Info &amp; Edukasi Kelapa Sawit (Web)"
+                android:backgroundTint="@color/button_pink"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

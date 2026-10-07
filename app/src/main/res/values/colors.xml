@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Warna Bawaan -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!-- Palette Utama SawitMON (Figma) -->
+    <color name="primary_green">#2D7D46</color>
+    <color name="primary_green_dark">#1E532E</color>
+
+    <!-- Palette Pink/Aksen Tombol -->
+    <color name="button_pink">#EE719E</color>
+    <color name="accent_pink">#F48FB1</color>
     <color name="soft_pink">#FDF0F4</color>
-    <color name="soft_button">#C47B95</color>
-    <color name="soft_text">#4A555C</color>
-    <color name="soft_heading">#2D3748</color>
     <color name="badge_bg">#F2D0DB</color>
     <color name="badge_text">#A85170</color>
+
+    <!-- Palette Background & Teks -->
+    <color name="bg_light_green">#EBF5ED</color>
+    <color name="soft_text">#4A555C</color>
+    <color name="soft_heading">#2D3748</color>
 </resources>
