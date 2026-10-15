@@ -16,84 +16,132 @@
         app:title="SawitMON - Masuk Petani"
         app:titleTextColor="@color/white" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:padding="24dp">
+        android:fillViewport="true">
 
-        <View
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.8" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="24dp">
 
-        <!-- Card Container Logo -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="2dp"
-            app:cardBackgroundColor="@color/white">
-
-            <ImageView
-                android:id="@+id/imgLogo"
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="12dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/logomobile" />
-        </androidx.cardview.widget.CardView>
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
 
-        <!-- Judul Aplikasi -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SawitMON"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            android:textColor="@color/primary_green"
-            android:layout_marginTop="16dp" />
+            <!-- Card Container Logo -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white">
 
-        <!-- Subtitle Badge Pink -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Portal Akses Khusus: Petani Kebun"
-            android:textSize="13sp"
-            android:textStyle="bold"
-            android:textColor="@color/badge_text"
-            android:background="@color/badge_bg"
-            android:paddingHorizontal="16dp"
-            android:paddingVertical="8dp"
-            android:layout_marginTop="12dp" />
+                <ImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/logomobile" />
+            </androidx.cardview.widget.CardView>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.2" />
+            <!-- Judul Aplikasi -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SawitMON"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_green"
+                android:layout_marginTop="12dp" />
 
-        <!-- Tombol Masuk -->
-        <Button
-            android:id="@+id/btnMasuk"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:text="MASUK DENGAN PIN PETANI"
-            android:backgroundTint="@color/button_pink"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            app:cornerRadius="12dp" />
+            <!-- Subtitle Badge Pink -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Portal Akses Khusus: Petani Kebun"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/badge_text"
+                android:background="@color/badge_bg"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:layout_marginTop="8dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Butuh bantuan login? Hubungi Pengurus Koperasi"
-            android:textSize="12sp"
-            android:textColor="@color/soft_text"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="8dp" />
+            <!-- Form Input Username & Password -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
 
-    </LinearLayout>
+                <EditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Username / ID Petani"
+                    android:inputType="text"
+                    android:paddingHorizontal="16dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="PIN / Password"
+                    android:inputType="textPassword"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- Tombol Masuk Utama -->
+            <Button
+                android:id="@+id/btnMasuk"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="MASUK DENGAN PIN PETANI"
+                android:backgroundTint="@color/button_pink"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:cornerRadius="12dp"
+                android:layout_marginTop="16dp" />
+
+            <!-- Tombol Profil Developer -->
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Lihat Profil Developer"
+                android:backgroundTint="@color/primary_green"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:cornerRadius="12dp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Butuh bantuan login? Hubungi Pengurus Koperasi"
+                android:textSize="12sp"
+                android:textColor="@color/soft_text"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

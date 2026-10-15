@@ -4,35 +4,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:fitsSystemWindows="true"
-    android:background="@color/bg_light_green">
+    android:background="#EFEFEF">
 
-    <!-- Toolbar Beranda Petani -->
+    <!-- Toolbar Utama Home -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarHome"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/primary_green"
+        android:background="#1B5E20"
         app:title="SawitMON - Beranda Petani"
         app:titleTextColor="@color/white" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:orientation="vertical">
 
-            <!-- Card Informasi Harga TBS -->
+            <!-- Card Harga TBS -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="12dp"
-                app:cardBackgroundColor="@color/soft_pink"
-                android:layout_marginBottom="16dp">
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#FCE4EC">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -44,54 +43,56 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Harga TBS Hari Ini"
-                        android:textColor="@color/badge_text"
+                        android:textColor="#E91E63"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Rp 2.850 / kg"
+                        android:textColor="#1B5E20"
                         android:textSize="22sp"
                         android:textStyle="bold"
-                        android:textColor="@color/primary_green"
                         android:layout_marginTop="4dp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Tombol 1: Input Perawatan Kebun -->
+            <!-- Tombol Menu 1 -->
             <Button
-                android:id="@+id/btnInputPerawatan"
+                android:id="@+id/btnFormulir"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginTop="16dp"
                 android:text="Formulir Kegiatan Harian"
+                android:textColor="#333333"
                 android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:layout_marginBottom="12dp"
                 app:cornerRadius="8dp" />
 
-            <!-- Tombol 2: Riwayat Hasil Panen -->
+            <!-- Tombol Menu 2 -->
             <Button
-                android:id="@+id/btnRiwayatPanen"
+                android:id="@+id/btnRiwayat"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginTop="10dp"
                 android:text="Riwayat Kegiatan Kebun"
+                android:textColor="#333333"
                 android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:layout_marginBottom="12dp"
                 app:cornerRadius="8dp" />
 
-            <!-- Tombol Web Edukasi Sawit -->
+            <!-- Tombol Ke Web Edukasi -->
             <Button
                 android:id="@+id/btnWebEdukasi"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="16dp"
                 android:text="Info &amp; Edukasi Kelapa Sawit (Web)"
-                android:backgroundTint="@color/button_pink"
                 android:textColor="@color/white"
+                android:backgroundTint="#E91E63"
                 android:textStyle="bold"
-                android:layout_marginBottom="12dp"
                 app:cornerRadius="8dp" />
 
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>

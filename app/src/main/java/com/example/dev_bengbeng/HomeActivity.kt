@@ -1,6 +1,5 @@
 package com.example.dev_bengbeng
 
-import com.example.dev_bengbeng.R
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -13,11 +12,13 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        // Setup Toolbar
         val toolbar = findViewById<Toolbar>(R.id.toolbarHome)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayShowHomeEnabled(true)
 
+        // Navigation ke EdukasiWebActivity
         val btnWebEdukasi = findViewById<Button>(R.id.btnWebEdukasi)
         btnWebEdukasi.setOnClickListener {
             val intent = Intent(this, EdukasiWebActivity::class.java)
@@ -26,7 +27,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
+        onBackPressedDispatcher.onBackPressed()
         return true
     }
 }
